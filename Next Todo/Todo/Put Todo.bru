@@ -1,0 +1,20 @@
+meta {
+  name: Put Todo
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:3000/todos/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title" : "Yoga",
+    "description" : "For lifestyle",
+    "user_id" : 3,
+    "status" : false
+  }
+}
